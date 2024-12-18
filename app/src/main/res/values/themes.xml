@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SuIcmeHatirlaticisi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Toolbar rengi için colorPrimary'yi tanımlayın -->
+        <item name="colorPrimary">@color/your_light_primary_color</item>
+
+        <!-- İsteğe bağlı olarak, dark theme için colorPrimaryVariant'ı da tanımlayabilirsiniz -->
+        <item name="colorPrimaryVariant">@color/your_dark_primary_color</item>
+
+        <!-- Toolbar üzerindeki metin ve ikon renkleri için colorOnPrimary'yi tanımlayın -->
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+
+    <style name="Theme.SuIcmeHatirlaticisi" parent="Base.Theme.SuIcmeHatirlaticisi" />
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_100ml"
+        android:title="100 ml " />
+    <item
+        android:id="@+id/add_200ml"
+        android:title="200 ml " />
+    <item
+        android:id="@+id/add_500ml"
+        android:title="500 ml" />
+    <item
+        android:id="@+id/add_1000ml"
+        android:title="1000 ml " />
+
+
+</menu>

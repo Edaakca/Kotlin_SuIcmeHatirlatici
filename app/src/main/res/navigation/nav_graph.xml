@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/baslangicFragment">
+    <fragment
+        android:id="@+id/baslangicFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.BaslangicFragment"
+        android:label="fragment_baslangic"
+        tools:layout="@layout/fragment_baslangic" >
+        <action
+            android:id="@+id/action_baslangicFragment_to_cinsiyetFragment"
+            app:destination="@id/cinsiyetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cinsiyetFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.CinsiyetFragment"
+        android:label="fragment_cinsiyet"
+        tools:layout="@layout/fragment_cinsiyet" >
+        <action
+            android:id="@+id/action_cinsiyetFragment_to_kiloFragment"
+            app:destination="@id/kiloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiloFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.KiloFragment"
+        android:label="fragment_kilo"
+        tools:layout="@layout/fragment_kilo" >
+        <action
+            android:id="@+id/action_kiloFragment_to_cinsiyetFragment"
+            app:destination="@id/cinsiyetFragment" />
+        <action
+            android:id="@+id/action_kiloFragment_to_hesapFragment"
+            app:destination="@id/hesapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eklemeFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.EklemeFragment"
+        android:label="fragment_ekleme"
+        tools:layout="@layout/fragment_ekleme" >
+        <action
+            android:id="@+id/action_eklemeFragment_to_cinsiyetFragment"
+            app:destination="@id/cinsiyetFragment" />
+        <action
+            android:id="@+id/action_eklemeFragment_to_arsivFragment"
+            app:destination="@id/arsivFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hesapFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.HesapFragment"
+        android:label="fragment_hesap"
+        tools:layout="@layout/fragment_hesap" >
+        <action
+            android:id="@+id/action_hesapFragment_to_uyanmaFragment"
+            app:destination="@id/uyanmaFragment" />
+        <action
+            android:id="@+id/action_hesapFragment_to_cinsiyetFragment"
+            app:destination="@id/cinsiyetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uyanmaFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.UyanmaFragment"
+        android:label="fragment_uyanma"
+        tools:layout="@layout/fragment_uyanma" >
+        <action
+            android:id="@+id/action_uyanmaFragment_to_uykuFragment"
+            app:destination="@id/uykuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uykuFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.UykuFragment"
+        android:label="fragment_uyku"
+        tools:layout="@layout/fragment_uyku" >
+        <action
+            android:id="@+id/action_uykuFragment_to_eklemeFragment"
+            app:destination="@id/eklemeFragment" />
+        <action
+            android:id="@+id/action_uykuFragment_to_uyanmaFragment"
+            app:destination="@id/uyanmaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arsivFragment"
+        android:name="com.edaakca.suicmehatirlaticisi.view.ArsivFragment"
+        android:label="fragment_arsiv"
+        tools:layout="@layout/fragment_arsiv" >
+        <action
+            android:id="@+id/action_arsivFragment_to_eklemeFragment"
+            app:destination="@id/eklemeFragment" />
+    </fragment>
+</navigation>
